@@ -1,0 +1,5 @@
+CREATE TABLE Ubicaciones_Dpto(
+	Numero INTEGER PRIMARY KEY,
+	FOREIGN KEY (Numero) REFERENCES Departamento(Numero),
+	Ubicacion CHAR(15) --PRIMARY KEY  no se permiten múltiples llaves primarias para la tabla «ubicaciones_dpto»
+);
