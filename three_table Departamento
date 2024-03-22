@@ -4,5 +4,5 @@ CREATE TABLE Departamento(
 	Rut_Gerente VARCHAR(10),
 	Gerente_Inicio DATE,
 	Ubicacion INT,
-	FOREIGN KEY (Ubicacion) REFERENCES Ubicacion_Dpto(Numero) --ERROR:  no existe la relación «ubicacion_dpto» 
+	FOREIGN KEY (Ubicacion) REFERENCES empleados(numero_dpto)  
 );
