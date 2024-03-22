@@ -1,14 +1,13 @@
-CREATE TABLE Empleados(
-	Rut VARCHAR(10) PRIMARY KEY NOT NULL UNIQUE,
-	Nombre VARCHAR(15) NOT NULL,
-	Primer_Apellido VARCHAR(15) NOT NULL,
-	Segundo_Apelliddo VARCHAR(15) NOT NULL,
-	Fecha_Nacimineto DATE NOT NULL,
-	Direccion VARCHAR(30) NOT NULL,
-	Sexo CHAR(15) NOT NULL,
-	Sueldo NUMERIC(5,2) NOT NULL,
-	Rut_Supervisor CHAR(10),
-	--FOREIGN KEY (Empleados) REFERENCES Rut, 
-	Numero_Dpto INTEGER,
-	FOREIGN KEY (Numero_Dpto) REFERENCES Departamentos(Numero)
+CREATE TABLE Empleados (
+    Rut VARCHAR(10) PRIMARY KEY NOT NULL UNIQUE,
+    Nombre VARCHAR(15) NOT NULL,
+    Primer_Apellido VARCHAR(15) NOT NULL,
+    Segundo_Apellido VARCHAR(15) NOT NULL,
+    Fecha_Nacimiento DATE NOT NULL,
+    Direccion VARCHAR(30) NOT NULL,
+    Sexo CHAR(15) NOT NULL,
+    Sueldo NUMERIC(5,2) NOT NULL,
+    Rut_Supervisor CHAR(10) UNIQUE,
+    Numero_Dpto INTEGER UNIQUE,
+    FOREIGN KEY (Rut_Supervisor) REFERENCES Empleados(Rut)
 );
