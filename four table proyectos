@@ -1,0 +1,8 @@
+CREATE TABLE proyecto(
+	nombre VARCHAR(15) NOT NULL UNIQUE,
+	Numero INTEGER PRIMARY KEY UNIQUE,
+	Ubicacion VARCHAR(15),
+	departamento_numero INTEGER,
+	FOREIGN KEY (departamento_numero) REFERENCES Departamento(Numero)
+ 
+	);
