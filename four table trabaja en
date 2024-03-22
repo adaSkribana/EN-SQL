@@ -1,0 +1,8 @@
+CREATE TABLE trabaja_en(
+	empleado_rut VARCHAR(10),
+	FOREIGN KEY (empleado_rut) REFERENCES empleados(rut),
+	proyecto_numero Integer,
+	FOREIGN KEY (proyecto_numero) REFERENCES proyecto(numero),
+	horas DECIMAL 
+	
+	);
