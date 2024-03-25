@@ -1,0 +1,9 @@
+CREATE TABLE carga_familiar (
+    empleado_rut VARCHAR(10),
+    nombre_carga VARCHAR(100),
+    Sexo CHAR(1),
+    Fecha_nacimiento DATE,
+    Parentesco VARCHAR(100),
+    PRIMARY KEY (empleado_rut, nombre_carga),
+    FOREIGN KEY (empleado_rut) REFERENCES empleados(Rut)
+);
