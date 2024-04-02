@@ -1,0 +1,1 @@
+SELECT SUM(cuotas_pagar) as total_cuotas FROM finanzas_personales;

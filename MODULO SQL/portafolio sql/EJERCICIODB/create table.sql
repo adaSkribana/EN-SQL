@@ -1,0 +1,6 @@
+CREATE TABLE clientes(
+	id_cliente SERIAL PRIMARY KEY,
+	nombre VARCHAR(25) NOT NULL,
+	apellido VARCHAR(25)  NOT NULL,
+	edad INTEGER NOT NULL
+);

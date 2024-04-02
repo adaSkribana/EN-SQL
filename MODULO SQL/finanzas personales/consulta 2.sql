@@ -1,0 +1,1 @@
+SELECT SUM(le_debo) as deuda_total FROM finanzas_personales;
